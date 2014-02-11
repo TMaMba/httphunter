@@ -23,7 +23,7 @@ body = []
 body_lenght = 100
 
 def help():
-	print "usage itshunter.py --host host --port|-p port"
+	print "usage httphunter.py --host host --port|-p port"
 	print "\n\t--host\t\t\tThe host where the server is running"
 	print "\t-p, --port\t\tThe port that the server is running on"
 	sys.exit(0)
