@@ -260,8 +260,6 @@ def fuzz(file, p_method, p_url):
 	global body
 	out_str = ''
 	
-	#for numOfmethod in range(len(method)):
-	#	for numOfuri in range(len(uri)):
 	for k in range(len(querystring)):
 		for kk in range(len(headers)):
 			for kkk in range(len(cookie)):
