@@ -44,12 +44,8 @@ def parseCommandLine():
 		if(sys.argv[i] == '-h'):
 			"""TODO: add the help message"""
 			help()
-		#if(sys.argv[i] == '--start'):
-		#	mode = 0
-		#if(sys.argv[i] == '--goon'):
-		#	mode = 1
 
-	return remoteAddress,remotePort,mode
+	return remoteAddress,remotePort
 
 
 def buildnormal(size):
@@ -304,7 +300,7 @@ def MonitorThread():
 			break
 
 			
-remoteAddress, remotePort, mode = parseCommandLine()
+remoteAddress, remotePort = parseCommandLine()
 bulidlist()
 total_request = len(method)*len(uri)*len(querystring)*len(headers)*len(cookie)*len(content_lenght)*len(body)
 print "[--- DAN Fuzzing Started ---]"
